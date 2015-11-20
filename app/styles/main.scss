@@ -23,7 +23,7 @@ body {
 
 #home {
   width: 100%;
-  min-height: 665px;
+  height: auto;
   background-image: url('../images/bg-cover.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,6 +39,10 @@ body {
    background-color: black;
    opacity: 0.6;
    z-index: 0;
+}
+
+#home img.center {
+  margin: 15% 25% 0;
 }
 
 #home h1, p {
@@ -155,11 +159,44 @@ ul li {
 
 }
 
+/* SLIDER SECTION*/
 
 #slider {
   width: 100%;
-  height: 700px;
+  height: auto;
+  margin: 5% 0 5%;
 }
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-caption {
+  float: right;
+  width: 40%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+/*FEATURED SECTION*/
+
 
 #featured h3 {
   color: #b41f3e;
@@ -168,16 +205,111 @@ ul li {
 
 #featured .panel-primary {
   width: 250px;
+  border: none;
+  border-radius: 5px;
   box-shadow: 5px 5px 3px #888888;
 }
 
 
-#featured .panel-footer p{
-   color: #323232;
+.panel-footer a{
+   color: #191919;
    font-weight: bold;
-   background-color: #fff;
+   text-align: center;
+}
+
+.panel-footer a:hover{
+   color: #b41f3e;
+   font-weight: bold;
+   text-align: center;
+   text-decoration: none;
+}
+
+.panel-footer p{
+   color: #8c8c8c;
+   font-weight: bold;
 
 }
+
 #featured .img-responsive {
   border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
+
+/*CONTACT SECTION*/
+
+#contact {
+  background: #07222f;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+#contact h2 {
+  color: #b41f3e;
+}
+
+#contact h2:first-child {
+  margin-left: 5%;
+}
+
+#contact p {
+  color: #fff;
+
+}
+
+/*Left side*/
+
+#contact .well {
+  background: none;
+  border: none;
+  width: 500px;
+}
+
+
+fieldset .input-block-level {
+  border: 1px solid #fff;
+  background: none;
+  margin: 3%;
+  padding: 2%;
+  width: 400px;
+  max-height:300px; 
+  border-radius: 3px;  
+  color: #fff;
+}
+
+.btn-defoult {
+      color: #fff;
+      background: #b41f3e;
+      margin: 2% 4% 0;
+      box-shadow: 3px 3px 2px #191919;
+
+}
+      .btn-defoult:hover {
+        color: #b41f3e;
+        font-weight: bold;
+        background: #fff;
+      }
+
+
+/*Right side*/
+
+#g-map {
+        width: 400px;
+        height: 200px;
+        background-color: #CCC;
+        margin: 3% 0 3%;
+
+      }
+
+
+
+
+
+
+.footer p {
+  width: 100%;
+  height: 10%;
+  color: #000;
+}
+
